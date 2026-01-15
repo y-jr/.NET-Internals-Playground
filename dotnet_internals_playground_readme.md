@@ -2,28 +2,29 @@
 
 Criei este repositório para partilhar algum do meu conhecimento sobre os principais componentes internos do .NET:
 
- - **CLR (Common Language Runtime)**
- - **JIT (Just-In-Time Compiler)**
- - **Garbage Collector (GC)**
- - **Stack vs Heap**
- - **Benchmarking simples e correto**
+ - CLR (Common Language Runtime)
+ - JIT (Just-In-Time Compiler)
+ - Garbage Collector (GC)
+ - Stack vs Heap
+ - Benchmarking simples e correto
 
 O foco aqui NÃO É COMPLEXIDADE DE CÓDIGO, e sim CLAREZA CONCEITUAL, observação do runtime e tomada de decisão baseada em medição.
 
 ---
-🎯 Objetivo
 
-Mostrar conceitos sobre:
-- como o código C# é executado **internamente**
-- identificar impacto de alocação e **GC**
-- explicar **Stack vs Heap** sem simplificações erradas
-- medir performance corretamente usando ferramentas adequadas
+## 🎯 Objetivo
+
+Mostrar que eu:
+- Entendo **como o código C# é executado internamente**
+- Sei **identificar impacto de alocação e GC**
+- Sei **explicar Stack vs Heap sem simplificações erradas**
+- Sei **medir performance corretamente** usando ferramentas adequadas
 
 Este repositório pode ser lido como um **laboratório de experimentos do CLR**.
 
 ---
 
-🧱 Estrutura do Repositório
+## 🧱 Estrutura do Repositório
 
 ```
 dotnet-internals-playground/
@@ -49,11 +50,11 @@ dotnet-internals-playground/
 
 Cada pasta contém:
 - Código simples e intencional
-- Um README explicando "O QUE OBSERVAR E PORQUÊ"
+- Um README explicando **o que observar e por quê**
 
 ---
 
-1️⃣ CLR, JIT e Garbage Collector
+## 1️⃣ CLR, JIT e Garbage Collector
 
 📁 **01-clr-jit-gc**
 
@@ -203,7 +204,7 @@ dotnet run -c Release
 
 Este repositório não é um tutorial introdutório.
 
-Ele foi criado para **demonstrar entendimento do runtime .NET**, algo essencial para:
+Ele foi criado para **demonstrar entendimento profundo do runtime .NET**, algo essencial para:
 - Backends de alta performance
 - Serviços de longa duração
 - Sistemas críticos
@@ -216,3 +217,6 @@ Ele foi criado para **demonstrar entendimento do runtime .NET**, algo essencial 
 Desenvolvedor .NET focado em arquitetura, performance e runtime internals.
 
 ---
+
+> “Código rápido não é o que roda mais rápido — é o que aloca menos e o runtime entende melhor.”
+
